@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-24T15:46:14 IST" name="Default suite" finished-at="2021-02-24T15:46:18 IST" duration-ms="4887">
+    <groups>
+    </groups>
+    <test started-at="2021-02-24T15:46:14 IST" name="Default test" finished-at="2021-02-24T15:46:18 IST" duration-ms="4887">
+      <class name="com.api.restAssuredTest.ApiConsumerControllerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.api.restAssuredTest.ApiConsumerControllerTest@6cd24612]" started-at="2021-02-24T15:46:14 IST" name="setup" finished-at="2021-02-24T15:46:15 IST" duration-ms="1387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getWeatherByCityNameSuccessTest()[pri:1, instance:com.api.restAssuredTest.ApiConsumerControllerTest@6cd24612]" started-at="2021-02-24T15:46:15 IST" name="getWeatherByCityNameSuccessTest" finished-at="2021-02-24T15:46:15 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWeatherByCityNameSuccessTest -->
+        <test-method signature="getWeatherByCityWithoutTokenFailureTest()[pri:2, instance:com.api.restAssuredTest.ApiConsumerControllerTest@6cd24612]" started-at="2021-02-24T15:46:15 IST" name="getWeatherByCityWithoutTokenFailureTest" finished-at="2021-02-24T15:46:15 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWeatherByCityWithoutTokenFailureTest -->
+        <test-method signature="getWeatherForDashBoardSuccessTest()[pri:3, instance:com.api.restAssuredTest.ApiConsumerControllerTest@6cd24612]" started-at="2021-02-24T15:46:15 IST" name="getWeatherForDashBoardSuccessTest" finished-at="2021-02-24T15:46:18 IST" duration-ms="3149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWeatherForDashBoardSuccessTest -->
+        <test-method signature="getWeatherForDashBoardWithoutTokenFailiureTest()[pri:4, instance:com.api.restAssuredTest.ApiConsumerControllerTest@6cd24612]" started-at="2021-02-24T15:46:18 IST" name="getWeatherForDashBoardWithoutTokenFailiureTest" finished-at="2021-02-24T15:46:18 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWeatherForDashBoardWithoutTokenFailiureTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.api.restAssuredTest.ApiConsumerControllerTest@6cd24612]" started-at="2021-02-24T15:46:18 IST" name="teardown" finished-at="2021-02-24T15:46:18 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.api.restAssuredTest.ApiConsumerControllerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,26 @@
+
+<div class="globallymovedown">
+
+
+<div class="registration-form">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-icon">
+            <span><i class="icon icon-user"></i></span>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control item" id="userName" 
+            placeholder="UserName" [(ngModel)]="login.userName" name="userName" required>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control item" id="password" 
+            placeholder="Password" [(ngModel)]="login.password" name="password" required>
+        </div>
+       
+        <div class="form-group">
+           <button type="submit" class="btn btn-block create-account">Login</button>
+        </div>
+    </form>
+</div>
+
+
+</div>

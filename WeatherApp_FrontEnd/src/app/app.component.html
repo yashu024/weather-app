@@ -1,0 +1,145 @@
+<header >
+        
+    <div class="container-fluid p-0 mynavbar">
+        <nav class="navbar navbar-expand-lg">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                <mat-icon class="logo-pic">public</mat-icon>
+              </button>
+              <span class = "logo">WeatherApp</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-align-right text-light"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item" *ngIf="loggedIn">
+                    <a class="nav-link" routerLink="dashboard">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item" *ngIf="loggedIn">
+                    <a class="nav-link" routerLink="search">Search</a>
+                </li>
+                
+                <li class="nav-item" *ngIf="loggedIn">
+                    <a class="nav-link" routerLink="favourites">Favourites</a>
+                </li>
+
+              </ul>
+
+                <div class="spacer">
+
+                </div>
+                <ul class="navbar-nav mr-auto">
+
+                  <!-- <li class="nav-item" *ngIf="!loggedIn">
+                    <a class="nav-link" routerLink="login">Login</a>
+                  </li> -->
+
+                  <li>
+                    <button mat-raised-button routerLink="login" *ngIf="!loggedIn" class="login-signup">Login</button>
+                  </li>
+
+                  <li>
+                   <button mat-raised-button routerLink="signup" *ngIf="!loggedIn" class="login-signup">Signup</button>
+                 </li>  
+                  <!-- <li class="nav-item" *ngIf="!loggedIn">
+                      <a class="nav-link" routerLink="signup">SignUp</a>
+                  </li> -->
+  
+                  <!-- <li class="nav-item" *ngIf="loggedIn">
+                      <a class="nav-link" routerLink="updateProfile">Update User</a>
+                  </li>
+  
+                  <li class="nav-item" *ngIf="loggedIn">
+                      <a class="nav-link" (click)="delete()" routerLink="landing_page">Delete User</a>
+                  </li>
+  
+                  <li class="nav-item" *ngIf="loggedIn">
+                      <a class="nav-link" (click)="logOut()" routerLink="landing_page">Logout</a>
+                  </li> -->
+
+                  <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>Item 1</button>
+                        <button mat-menu-item>Item 2</button>
+                    </mat-menu> -->
+
+                    <button class = "drop-down" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" *ngIf="loggedIn">
+                        <img src={{profileAvatar}} alt="" class="img-fluid rounded-circle z-depth-0">
+                        <span class="user-name-title">{{user_name}}</span>
+                        <mat-icon>arrow_drop_down</mat-icon>
+                      </button>
+                      <mat-menu #menu="matMenu" class="customize">
+                        <button mat-menu-item routerLink="updateProfile">
+                          <mat-icon>manage_accounts</mat-icon>
+                          <span>Update profile</span>
+                        </button>
+                        <button mat-menu-item routerLink="changePassword">
+                          <mat-icon>fingerprint</mat-icon>
+                          <span>Change password</span>
+                        </button>
+                        <button mat-menu-item (click)="openDialog()">
+                          <mat-icon>remove_moderator</mat-icon>
+                          <span>Delete account</span>
+                        </button>
+                        <button mat-menu-item (click)="logOut()" routerLink="landing_page">
+                          <mat-icon>person_add_disabled</mat-icon>
+                          <span>Logout</span>
+                        </button>
+                      </mat-menu>
+                      
+
+
+
+                  </ul>
+  
+              
+            </div>
+          </nav>
+    </div>
+  </header> 
+
+
+<router-outlet></router-outlet>
+<footer>
+  
+    <div class="container-fluid p-0">
+        <div class="row text-left">
+  
+            <div class="col-md-5 col-sm-5">
+                <h1 class="text-light">Support</h1>
+                <p class="text-muted">info@weather.org</p>
+                <p class="pt-4 text-muted">Copyright @2021 All rights are reserved</p>
+            </div>
+  
+            <div class="col-md-5">
+                <h4 class="text-light">Newsletter</h4>
+                <p class="text-muted">Stay Updated</p>
+                <form class="form-inline">
+                    <div class="col pl-0">
+                        <div class="input-group pr-5">
+                            <input type="text" class="form-control bg-dark text-white" placeholder="Email">
+                             <div class="input-group-prepend">
+                                 <div class="input-group-text">
+                                     <i class="fas fa-arrow-right"></i>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+  
+            <div class="col-md-2 col-sm-12">
+                <h4 class="text-light">Follow Us</h4>
+                <p class="text-muted">Let us be social</p>
+                <div class="column">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>

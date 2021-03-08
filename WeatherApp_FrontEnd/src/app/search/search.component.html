@@ -1,0 +1,97 @@
+<div class="globallymovedown">
+  <!-- <div class="moving-clouds" style="background-image: url('assets/images/clouds2.png'); "></div> -->
+<div class = "search">
+    <h2 class="h2-responsive">Search Weather by city</h2>
+    <mat-form-field class="example-form-field" appearance="outline">
+        <mat-label>Enter city</mat-label>
+            <input matInput id="searchbox" type="text" [(ngModel)]="value" placeholder="search weather by city">
+            <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    
+
+<div class="searchField" >
+    <!-- <input type="text"> -->
+
+    <div class= "searchButton">
+        <button id="searchbutton" mat-raised-button color="primary" width="50px" (click)="buttonClick()">Search</button>
+    </div>
+</div>
+
+<div class="para" *ngIf="!found&&!loading">
+
+</div>
+
+<!-- <mat-spinner *ngIf="loading" class="spinner" diameter="40"></mat-spinner> -->
+
+
+<div class="container" *ngIf="found&&!viewCard">
+
+        <div class="card mr-1 d-inline-block shadow-lg">
+            <div class="card-img-top">
+                
+                  <img src= {{city.weather.icon}} alt="icon loading...." class="img-fluid border-radius p-4">
+
+            </div>
+            <div class="card-body">
+                <h3 class="card-title temp">{{ city.main.temp }}°C</h3>
+                <h3 class="card-title" id="cityname">{{ city.name }}, {{ city.sys.country }}</h3>
+                <p class="card-text">{{ city.weather.main }}</p>
+                
+                <button id="togglecard" mat-button (click)="toggleViewCard()">View</button>
+               <button id="togglefav" mat-button (click)="favToggle()" [style.color]="toggleColor">{{ toggleString }}</button>
+            </div>
+        
+
+
+    </div>
+
+</div>
+<div class = weather-card *ngIf="found&&viewCard">
+<mat-card class="mat-elevation-z5">
+  <mat-card-header>
+    <mat-card-title>{{ city.name }}'s weather</mat-card-title>
+    <mat-card-subtitle>Today: {{getDate()}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="flex-row">
+      <div class= "temperature">
+        <span class = "big-text">{{ city.main.temp }}°C</span>
+        <span class = "feels-like">Feels like {{ city.main.feels_like }}°C</span>
+        <div style="float:left;">
+          <span style="display:inline; color: darkblue;">⬇{{ city.main.temp_min }} </span>/
+          <span style="display:inline; color: darkred"> ⬆{{ city.main.temp_max }}°C</span>
+      </div>
+      </div>
+      <div class="outlook">
+        <img src={{city.weather.icon}} />
+          <span class = "weather-desc">{{ city.weather.description }}</span>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="favToggle()" [style.color]="toggleColor">{{ toggleString }}</button>
+    <button mat-button (click)="toggleViewCard()">Back</button>
+    <div class = country style="float:right;">
+      <span style="display:inline; color: black; font-weight: 500;">Country: </span>
+      <span style="display:inline; color: darkred"> {{ city.sys.country }}</span>
+  </div>
+  </mat-card-actions>
+</mat-card>
+
+</div>
+
+
+
+<div class = "progress-bar" *ngIf="loading">
+  <img src="assets/images/spinner.gif" class="spinner">
+</div>
+
+<div class="myemptyspace"> 
+
+</div>
+
+
+</div>

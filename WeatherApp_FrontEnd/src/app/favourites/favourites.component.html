@@ -1,0 +1,52 @@
+
+<div class="globallymovedown">
+
+    <div class="moving-clouds" style="background-image: url('assets/images/clouds2.png'); "></div>
+
+<div class = "noCityTitle" *ngIf="!loading&&flag">
+    <h1 class="h1-responsive">You don't have any favourite city</h1>
+</div>
+
+
+<div  *ngIf="loading">
+    <img src="assets/images/dot.gif" class = "progress-bar" >
+  
+  </div>
+
+<div class="container" *ngIf="found">
+
+    <div class="row justify-content-center">
+      <div  class="col-12 col-md-4 col-sm-12 col-xs-12" *ngFor="let city of cities" >
+      
+          <div class="card p-4">
+            <div class="d-flex">
+                <h4 class="flex-grow-1">{{ city.name }}, {{ city.sys.country }}</h4>
+                <h6>
+                    <button mat-button (click)="favToggle(city)" [style.color]="favColor"><i class="material-icons">favorite</i></button>
+                </h6>
+
+            </div>
+            <div class="d-flex flex-column temp mt-5 mb-3">
+                <h1 class="mb-0 font-weight-bold" id="heading"> {{ city.main.temp }}° C </h1><br> <span class="small grey">{{ city.weather.main }}</span>
+            </div>
+            <div class="d-flex">
+                <div class="temp-details flex-grow-1">
+                    <p class="my-1"> <img src="https://i.imgur.com/B9kqOzp.png" height="17px"> <span> {{city.visibility}} </span> </p>
+                    <p class="my-1"> <i class="fa fa-tint mr-2" aria-hidden="true"></i> <span> {{city.main.humidity}}% </span> </p>
+                    <p class="my-1"> <img src="https://i.imgur.com/wGSJ8C5.png" height="17px"> <span> {{city.sys.sunrise}} </span> </p>
+                </div>
+                <div> <img src={{city.weather.icon}} width="100px"> </div>
+            </div>
+          </div>
+  
+      </div>
+    
+    </div>
+
+    <div class="space">
+
+    </div>
+    <div class="moving-clouds second" style="background-image: url('assets/images/clouds2.png'); "></div>
+
+</div>
+

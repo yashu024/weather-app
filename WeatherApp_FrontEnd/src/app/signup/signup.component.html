@@ -1,0 +1,43 @@
+<div class="globallymovedown">
+<div class="registration-form">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-icon">
+                <img [src]="url"  class="pic">
+            
+            
+        </div>
+        
+        <div class="form-group">
+            <input type="text" class="form-control item" id="userName" 
+            placeholder="UserName" [(ngModel)]="user.userName" name="userName" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control item" id="fullName" 
+            placeholder="FullName" [(ngModel)]="user.fullName" name="fullName" required>
+        </div>
+
+        <div class="form-group">
+            <input type="email" class="form-control item" id="email" 
+            placeholder="Email" [(ngModel)]="user.email" name="email" required> 
+        </div>
+
+        <div class="form-group">
+            <input type="password" class="form-control item" id="password" 
+            placeholder="Password" [(ngModel)]="user.password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <!-- <input type="file"  id="profilePicture" 
+            placeholder="profilePicture" (change)="handleUpload($event)"> -->
+            <input type='file' (change)="onSelectFile($event)" class="form-control item" placeholder="profilePicture" id="profilePicture">
+        </div>
+       
+       
+        <div class="form-group">
+            <button type="submit" class="btn btn-block create-account">Create Account</button>
+        </div>
+    </form>
+</div>
+
+</div>

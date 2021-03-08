@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-24T21:27:00 IST" name="Default suite" finished-at="2021-02-24T21:27:03 IST" duration-ms="2672">
+    <groups>
+    </groups>
+    <test started-at="2021-02-24T21:27:00 IST" name="Default test" finished-at="2021-02-24T21:27:03 IST" duration-ms="2672">
+      <class name="com.favourite.api.restAssured.FavouriteControllerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.favourite.api.restAssured.FavouriteControllerTest@6e2aa843]" started-at="2021-02-24T21:27:00 IST" name="setup" finished-at="2021-02-24T21:27:02 IST" duration-ms="1792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addFavouriteCitiesSuccessTest()[pri:1, instance:com.favourite.api.restAssured.FavouriteControllerTest@6e2aa843]" started-at="2021-02-24T21:27:02 IST" name="addFavouriteCitiesSuccessTest" finished-at="2021-02-24T21:27:03 IST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addFavouriteCitiesSuccessTest -->
+        <test-method signature="addFavouriteCitiesWithoutTokenFailureTest()[pri:2, instance:com.favourite.api.restAssured.FavouriteControllerTest@6e2aa843]" started-at="2021-02-24T21:27:03 IST" name="addFavouriteCitiesWithoutTokenFailureTest" finished-at="2021-02-24T21:27:03 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addFavouriteCitiesWithoutTokenFailureTest -->
+        <test-method signature="getAllCitiesByUserSuccessTest()[pri:3, instance:com.favourite.api.restAssured.FavouriteControllerTest@6e2aa843]" started-at="2021-02-24T21:27:03 IST" name="getAllCitiesByUserSuccessTest" finished-at="2021-02-24T21:27:03 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCitiesByUserSuccessTest -->
+        <test-method signature="getAllCitiesByUserWithoutTokenFailureTest()[pri:4, instance:com.favourite.api.restAssured.FavouriteControllerTest@6e2aa843]" started-at="2021-02-24T21:27:03 IST" name="getAllCitiesByUserWithoutTokenFailureTest" finished-at="2021-02-24T21:27:03 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCitiesByUserWithoutTokenFailureTest -->
+        <test-method signature="removeFavouriteCitiesSuccessTest()[pri:5, instance:com.favourite.api.restAssured.FavouriteControllerTest@6e2aa843]" started-at="2021-02-24T21:27:03 IST" name="removeFavouriteCitiesSuccessTest" finished-at="2021-02-24T21:27:03 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeFavouriteCitiesSuccessTest -->
+        <test-method signature="removeAllFavoriteCitiesByUserWithoutTokenFailureTest()[pri:6, instance:com.favourite.api.restAssured.FavouriteControllerTest@6e2aa843]" started-at="2021-02-24T21:27:03 IST" name="removeAllFavoriteCitiesByUserWithoutTokenFailureTest" finished-at="2021-02-24T21:27:03 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeAllFavoriteCitiesByUserWithoutTokenFailureTest -->
+        <test-method signature="removeAllFavoriteCitiesByUserSuccessTest()[pri:7, instance:com.favourite.api.restAssured.FavouriteControllerTest@6e2aa843]" started-at="2021-02-24T21:27:03 IST" name="removeAllFavoriteCitiesByUserSuccessTest" finished-at="2021-02-24T21:27:03 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeAllFavoriteCitiesByUserSuccessTest -->
+        <test-method signature="getAllCitiesByUserFailureTest()[pri:8, instance:com.favourite.api.restAssured.FavouriteControllerTest@6e2aa843]" started-at="2021-02-24T21:27:03 IST" name="getAllCitiesByUserFailureTest" finished-at="2021-02-24T21:27:03 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCitiesByUserFailureTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.favourite.api.restAssured.FavouriteControllerTest@6e2aa843]" started-at="2021-02-24T21:27:03 IST" name="teardown" finished-at="2021-02-24T21:27:03 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.favourite.api.restAssured.FavouriteControllerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-07T23:44:07 IST" name="Default suite" finished-at="2021-03-07T23:44:09 IST" duration-ms="2314">
+    <groups>
+    </groups>
+    <test started-at="2021-03-07T23:44:07 IST" name="Default test" finished-at="2021-03-07T23:44:09 IST" duration-ms="2314">
+      <class name="com.user.api.restAssuredTest.UserControllerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.user.api.restAssuredTest.UserControllerTest@4b0d79fc]" started-at="2021-03-07T23:44:07 IST" name="setup" finished-at="2021-03-07T23:44:07 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createUserSuccessTest()[pri:1, instance:com.user.api.restAssuredTest.UserControllerTest@4b0d79fc]" started-at="2021-03-07T23:44:07 IST" name="createUserSuccessTest" finished-at="2021-03-07T23:44:09 IST" duration-ms="1832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserSuccessTest -->
+        <test-method signature="createDuplicateUserFailureTest()[pri:2, instance:com.user.api.restAssuredTest.UserControllerTest@4b0d79fc]" started-at="2021-03-07T23:44:09 IST" name="createDuplicateUserFailureTest" finished-at="2021-03-07T23:44:09 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDuplicateUserFailureTest -->
+        <test-method signature="updateUserSuccessTest()[pri:3, instance:com.user.api.restAssuredTest.UserControllerTest@4b0d79fc]" started-at="2021-03-07T23:44:09 IST" name="updateUserSuccessTest" finished-at="2021-03-07T23:44:09 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserSuccessTest -->
+        <test-method signature="updateUserWithoutTokenFailureTest()[pri:4, instance:com.user.api.restAssuredTest.UserControllerTest@4b0d79fc]" started-at="2021-03-07T23:44:09 IST" name="updateUserWithoutTokenFailureTest" finished-at="2021-03-07T23:44:09 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserWithoutTokenFailureTest -->
+        <test-method signature="getUserDetailsSuccessTest()[pri:5, instance:com.user.api.restAssuredTest.UserControllerTest@4b0d79fc]" started-at="2021-03-07T23:44:09 IST" name="getUserDetailsSuccessTest" finished-at="2021-03-07T23:44:09 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserDetailsSuccessTest -->
+        <test-method signature="getUserDetailsWithoutTokenFailureTest()[pri:6, instance:com.user.api.restAssuredTest.UserControllerTest@4b0d79fc]" started-at="2021-03-07T23:44:09 IST" name="getUserDetailsWithoutTokenFailureTest" finished-at="2021-03-07T23:44:09 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserDetailsWithoutTokenFailureTest -->
+        <test-method signature="deleteUserWithoutTokenFailureTest()[pri:7, instance:com.user.api.restAssuredTest.UserControllerTest@4b0d79fc]" started-at="2021-03-07T23:44:09 IST" name="deleteUserWithoutTokenFailureTest" finished-at="2021-03-07T23:44:09 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserWithoutTokenFailureTest -->
+        <test-method signature="deleteUserSuccessTest()[pri:8, instance:com.user.api.restAssuredTest.UserControllerTest@4b0d79fc]" started-at="2021-03-07T23:44:09 IST" name="deleteUserSuccessTest" finished-at="2021-03-07T23:44:09 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserSuccessTest -->
+      </class> <!-- com.user.api.restAssuredTest.UserControllerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
